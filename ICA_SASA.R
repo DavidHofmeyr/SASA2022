@@ -1,5 +1,6 @@
 if(!('FKSUM'%in%installed.packages())) install.packages('FKSUM')
 library(FKSUM)
+library(MASS)
 
 # Objective function for evaluating negative entropy,
 # alternatively pseudo-likelihood
