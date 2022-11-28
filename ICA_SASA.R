@@ -33,7 +33,11 @@ grad_ica <- function(v, X, h){
 # Function to optimise the projection matrix
 # in order to minimise the negative entropy
 # subject to orthonormality
-# The only argument is the (un-whitened) data matrix
+# The only manadatory argument is the (un-whitened) data matrix.
+# An optional number of components to extract may also be provided.
+# By default the extracted components are rotations of the principal
+# scaled components (this is common among all implementations of
+# which I am aware).
 
 myica <- function(X, ncomp = NULL){
   n <- nrow(X)
